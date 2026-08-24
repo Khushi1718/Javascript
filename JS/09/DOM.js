@@ -9,3 +9,7 @@ console.log(document.title)
 document.title="abd";
 console.log(window.document.title) //we changed our dom by javscript 
 document.write("By khushi nain")
+
+// WE CAN USE getElementById,getElementByTagName,getElementsByClassName,querySelector,querySelectorAll to acess the dom elements
+let abc = document.getElementById("abc");
+console.log(abc);

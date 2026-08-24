@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        #main {
+            color: red;
+            background-color:black;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+        #abc,#card{
+            display:none;
+        }
+        #container{
+            position:absolute;
+            transition:all cubic-bezier(0.19, 1, 0.22, 1) .1s;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p id="main">
+        1
+    </p>
+    <input id ="abc" type="file">
+    <div> 
+        <button>Upload your file</button>
+    </div>
+     <form>
+        <input type="text" placeholder="Enter your name here">
+        <input type="text" placeholder="Enter your mail here">
+        <input type="file" placeholder="upload picture here">
+        <input type="submit">
+    </form>
+    <div id="card">
+        Your name is <span id="name">""</span>
+        Your mail is <span id="mail">""</span>  
+        Your picture is <span id="picture">""</span>
+    </div>
+
+<div id="container">
+        <p> lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur 
+
+        </p>
+    </div>
+    <script src="eventlistner2.js"></script>
+    
+   
+</body>
+</html>
