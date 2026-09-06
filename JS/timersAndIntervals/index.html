@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+        }
+
+        .card {
+            width: min(480px, 92vw);
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin: 0 0 16px;
+            color: #555;
+        }
+
+        .progress-track {
+            width: 100%;
+            height: 14px;
+            border-radius: 999px;
+            background: #eceff1;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #00c853, #64dd17);
+            transition: width 0.35s ease;
+        }
+
+        .status-row {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            color: #263238;
+        }
+
+        button {
+            margin-top: 18px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-weight: 700;
+            color: #fff;
+            background: #1565c0;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: #90a4ae;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <div class="card">
+        <h1>Download Simulation</h1>
+        <p>Click the button to simulate file downloading using timers.</p>
+
+        <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="status-row">
+            <span id="statusText">Waiting...</span>
+            <span id="percentText">0%</span>
+        </div>
+
+        <button id="downloadBtn">Start Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

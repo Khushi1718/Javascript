@@ -11,3 +11,10 @@ form.addEventListener("submit",(e)=>{
         short.style.display="none";
     }
 });
+name.addEventListener("focus",()=>{
+    console.log("focus");
+});
+name.addEventListener("blur",()=>{
+    console.log("blur");
+});
+let email = document.querySelector("#email");
