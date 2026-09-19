@@ -1,0 +1,15 @@
+JavaScript language khud apne features/functions
+ deti hai, jaise Array, Object, Promise, etc.
+Browser inke alawa Web APIs provide karta hai, 
+jaise alert(), setInterval(), setTimeout(), fetch(), DOM APIs (document), Geolocation, etc.
+ Toh agar JS ke apne features + browser ki Web APIs available hain, 
+ hum dono ko use kar sakte hain. Bas Web APIs JavaScript ka part nahi hain — 
+ browser provide karta hai, aur JS unhe use karti hai.
+
+
+Call Stack + Event Loop ko simple way mein samjho: JavaScript mein jo code execute hota hai,
+woh Call Stack mein jaata hai aur ek-ek karke execute hota hai. Agar koi asynchronous kaam hai, 
+jaise setTimeout() ya fetch(), toh browser uska kaam Web API ko de deta hai, isliye Call Stack block
+nahi hota. Jab async kaam complete hota hai, uska callback queue mein wait karta hai. Event Loop continuously 
+check karta hai ki Call Stack empty hai ya nahi; agar empty hai, toh queue se callback ko Call Stack mein bhej deta hai.
+ Isliye JavaScript single-threaded hote hue bhi asynchronous kaam handle kar paati hai.
