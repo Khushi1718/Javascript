@@ -4,7 +4,7 @@ function changebutton(config){
     return function output(text){
         button.textContent = text;
         setTimeout(()=>{
-           button.textContent ="Download Again!" 
+           button.textContent ="Download"; 
         },config.duration*1000)
     }
 }
